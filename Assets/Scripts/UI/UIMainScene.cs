@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
+
 public class UIMainScene : MonoBehaviour
 {
     public static UIMainScene Instance { get; private set; }
@@ -72,5 +74,11 @@ public class UIMainScene : MonoBehaviour
             m_CurrentContent = content;
             InfoPopup.Name.text = content.GetName();
         }
+    }
+
+    public void BackMenu()
+    {
+        // add code here
+        SceneManager.LoadScene("Menu");
     }
 }
